@@ -909,8 +909,11 @@ function startCountdown() {
         countdown -= 1;
 
         if (countdown <= 0) {
+ 
 
-            refreshDashboard();
+            //refreshDashboard();
+
+              window.location.href = window.location.pathname + '?t=' + Date.now();
 
             countdown = REFRESH_SECONDS;
 
